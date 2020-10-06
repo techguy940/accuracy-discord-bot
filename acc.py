@@ -25,7 +25,7 @@ async def acc(ctx,gameName=None,time=None,accuracy=None,winAmt=None,*,status=Non
 @acc.error
 async def acc_error(ctx,error):
     if isinstance(error,commands.CheckFailure):
-        await ctx.send("You need {} to use this command".format(gameRole))
+        await ctx.send("You need {} to use this command".format(accRole))
     else:
         raise error
 
